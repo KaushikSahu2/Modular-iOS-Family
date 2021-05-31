@@ -7,30 +7,29 @@
 
 import UIKit
 import Dependencies
-import Service
 
 public class StorageModule: StorageModuleProtocol {
     public init() {}
     
-    public func messageSender(to receiver: PushIdentity, about product: Product?) -> StorageMessageSender {
-        // configure and return an object for sending a msg in the background
-        return MessageSender()
+    public func getStoreLocation() -> String {
+        print("[Storage] : Fetching store location = <\(getStorageIdentity())>")
+        return getStorageIdentity()
+    }
+
+    public func saveData(data: String) {
+        // configure and return a view controller
+        print("[Storage] : Saving data in <\(getStorageIdentity())>")
     }
     
-    public func saveData() -> UIViewController {
-        // configure and return a view controller
-        return DatabaseViewController()
-    }
-    
-    public func messagesScreen(pushIdentity: PushIdentity, product: Product?) -> UIViewController {
-        // configure and return a view controller
-        return StorageViewController(pushIdentity: pushIdentity, product: product)
+    public func getData() -> String {
+        let fetchedData = "123456780"
+        print("[Storage] : Fethcing data from <\(getStorageIdentity())> = \(fetchedData)")
+        return fetchedData
     }
 }
 
-private class MessageSender: StorageMessageSender {
-    
-    func sendNewMessage(with body: String, completion: @escaping (String?) -> Void) {
-        // provide an implementation here
+extension StorageModule {
+    private func getStorageIdentity() -> String {
+        return "SQLITE DB"
     }
 }

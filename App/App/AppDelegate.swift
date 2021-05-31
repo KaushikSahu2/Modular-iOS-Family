@@ -8,7 +8,6 @@
 
 import UIKit
 import Dependencies
-import Service
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
@@ -39,19 +38,17 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     }
 }
 
-private func currentUser() -> PushIdentity {
-    return PushIdentity(identifier: "APNS")
-}
-
 private func firstScreen() -> UIViewController {
-    let vc = embedInNav(Dependencies.shared.storageModule.saveData())
+    let storageViewController = StorageViewController()
+    let vc = embedInNav(storageViewController)
     vc.tabBarItem.title = "Storage"
     vc.tabBarItem.image = UIImage(named: "first")
     return vc
 }
 
 private func secondScreen() -> UIViewController {
-    let vc = embedInNav(Dependencies.shared.pushModule.registerPushNotification())
+    let pushViewController = PushViewController()
+    let vc = embedInNav(pushViewController)
     vc.tabBarItem.title = "Push"
     vc.tabBarItem.image = UIImage(named: "second")
     return vc

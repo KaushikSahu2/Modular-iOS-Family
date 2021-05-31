@@ -12,10 +12,6 @@
 		9142715426651A7400D71A74 /* Push.h in Headers */ = {isa = PBXBuildFile; fileRef = 9142714626651A7300D71A74 /* Push.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		9142716126651A8800D71A74 /* Dependencies.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9142715E26651A8800D71A74 /* Dependencies.framework */; };
 		9142716226651A8800D71A74 /* Dependencies.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 9142715E26651A8800D71A74 /* Dependencies.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		9142716326651A8800D71A74 /* Service.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9142715F26651A8800D71A74 /* Service.framework */; };
-		9142716426651A8800D71A74 /* Service.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 9142715F26651A8800D71A74 /* Service.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		9142716526651A8800D71A74 /* Utils.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9142716026651A8800D71A74 /* Utils.framework */; };
-		9142716626651A8800D71A74 /* Utils.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 9142716026651A8800D71A74 /* Utils.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		91427176266527A400D71A74 /* PushModule.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91427175266527A400D71A74 /* PushModule.swift */; };
 		914271782665285600D71A74 /* PushViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 914271772665285600D71A74 /* PushViewController.swift */; };
 /* End PBXBuildFile section */
@@ -37,8 +33,6 @@
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
-				9142716426651A8800D71A74 /* Service.framework in Embed Frameworks */,
-				9142716626651A8800D71A74 /* Utils.framework in Embed Frameworks */,
 				9142716226651A8800D71A74 /* Dependencies.framework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
@@ -54,10 +48,8 @@
 		9142715126651A7400D71A74 /* PushTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PushTests.swift; sourceTree = "<group>"; };
 		9142715326651A7400D71A74 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		9142715E26651A8800D71A74 /* Dependencies.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Dependencies.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		9142715F26651A8800D71A74 /* Service.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Service.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		9142716026651A8800D71A74 /* Utils.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Utils.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		91427175266527A400D71A74 /* PushModule.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PushModule.swift; sourceTree = "<group>"; };
-		914271772665285600D71A74 /* PushViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PushViewController.swift; sourceTree = "<group>"; };
+		914271772665285600D71A74 /* PushViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = PushViewController.swift; path = ../../../App/App/PushViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -65,8 +57,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				9142716326651A8800D71A74 /* Service.framework in Frameworks */,
-				9142716526651A8800D71A74 /* Utils.framework in Frameworks */,
 				9142716126651A8800D71A74 /* Dependencies.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -125,8 +115,6 @@
 			isa = PBXGroup;
 			children = (
 				9142715E26651A8800D71A74 /* Dependencies.framework */,
-				9142715F26651A8800D71A74 /* Service.framework */,
-				9142716026651A8800D71A74 /* Utils.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";

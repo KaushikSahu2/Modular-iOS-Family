@@ -6,11 +6,12 @@
 //  Copyright © 2021 Depop. All rights reserved.
 //
 
-import UIKit
-import Service
+import Foundation
 
 public protocol PushModuleProtocol {
-    func registerPushNotification() -> UIViewController
+    func pushService() -> String
+    func registerPushNotification()
+    func pushNotificationReceived()
 }
 
 extension Dependencies {

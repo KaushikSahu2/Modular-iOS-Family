@@ -12,13 +12,7 @@
 		9142713026651A5000D71A74 /* Storage.h in Headers */ = {isa = PBXBuildFile; fileRef = 9142712226651A4F00D71A74 /* Storage.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		9142716C26651AA000D71A74 /* Dependencies.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9142716926651AA000D71A74 /* Dependencies.framework */; };
 		9142716D26651AA000D71A74 /* Dependencies.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 9142716926651AA000D71A74 /* Dependencies.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		9142716E26651AA000D71A74 /* Service.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9142716A26651AA000D71A74 /* Service.framework */; };
-		9142716F26651AA000D71A74 /* Service.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 9142716A26651AA000D71A74 /* Service.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		9142717026651AA000D71A74 /* Utils.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9142716B26651AA000D71A74 /* Utils.framework */; };
-		9142717126651AA000D71A74 /* Utils.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 9142716B26651AA000D71A74 /* Utils.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		914271742665279400D71A74 /* StorageModule.swift in Sources */ = {isa = PBXBuildFile; fileRef = 914271732665279400D71A74 /* StorageModule.swift */; };
-		9142717A2665291B00D71A74 /* StorageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 914271792665291B00D71A74 /* StorageViewController.swift */; };
-		9142717C2665296A00D71A74 /* DatabaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9142717B2665296A00D71A74 /* DatabaseViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -38,8 +32,6 @@
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
-				9142716F26651AA000D71A74 /* Service.framework in Embed Frameworks */,
-				9142717126651AA000D71A74 /* Utils.framework in Embed Frameworks */,
 				9142716D26651AA000D71A74 /* Dependencies.framework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
@@ -55,11 +47,7 @@
 		9142712D26651A5000D71A74 /* StorageTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StorageTests.swift; sourceTree = "<group>"; };
 		9142712F26651A5000D71A74 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		9142716926651AA000D71A74 /* Dependencies.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Dependencies.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		9142716A26651AA000D71A74 /* Service.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Service.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		9142716B26651AA000D71A74 /* Utils.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Utils.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		914271732665279400D71A74 /* StorageModule.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StorageModule.swift; sourceTree = "<group>"; };
-		914271792665291B00D71A74 /* StorageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StorageViewController.swift; sourceTree = "<group>"; };
-		9142717B2665296A00D71A74 /* DatabaseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DatabaseViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -67,8 +55,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				9142716E26651AA000D71A74 /* Service.framework in Frameworks */,
-				9142717026651AA000D71A74 /* Utils.framework in Frameworks */,
 				9142716C26651AA000D71A74 /* Dependencies.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -109,8 +95,6 @@
 				9142712226651A4F00D71A74 /* Storage.h */,
 				9142712326651A4F00D71A74 /* Info.plist */,
 				914271732665279400D71A74 /* StorageModule.swift */,
-				914271792665291B00D71A74 /* StorageViewController.swift */,
-				9142717B2665296A00D71A74 /* DatabaseViewController.swift */,
 			);
 			path = Storage;
 			sourceTree = "<group>";
@@ -128,8 +112,6 @@
 			isa = PBXGroup;
 			children = (
 				9142716926651AA000D71A74 /* Dependencies.framework */,
-				9142716A26651AA000D71A74 /* Service.framework */,
-				9142716B26651AA000D71A74 /* Utils.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -244,8 +226,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				9142717C2665296A00D71A74 /* DatabaseViewController.swift in Sources */,
-				9142717A2665291B00D71A74 /* StorageViewController.swift in Sources */,
 				914271742665279400D71A74 /* StorageModule.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

@@ -9,9 +9,9 @@
 /* Begin PBXBuildFile section */
 		3D46400722318AC2000FB12F /* Dependencies.h in Headers */ = {isa = PBXBuildFile; fileRef = 3D46400522318AC2000FB12F /* Dependencies.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		3D46401922318F6C000FB12F /* Dependencies.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D46401822318F6C000FB12F /* Dependencies.swift */; };
-		3D46402222319060000FB12F /* Service.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3D46402122319060000FB12F /* Service.framework */; };
 		914270B02665170800D71A74 /* Storage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 914270AF2665170800D71A74 /* Storage.swift */; };
 		914270EE266518BA00D71A74 /* Push.swift in Sources */ = {isa = PBXBuildFile; fileRef = 914270ED266518BA00D71A74 /* Push.swift */; };
+		91427189266591D100D71A74 /* DependencyManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91427188266591D100D71A74 /* DependencyManager.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -19,9 +19,9 @@
 		3D46400522318AC2000FB12F /* Dependencies.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Dependencies.h; sourceTree = "<group>"; };
 		3D46400622318AC2000FB12F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		3D46401822318F6C000FB12F /* Dependencies.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Dependencies.swift; sourceTree = "<group>"; };
-		3D46402122319060000FB12F /* Service.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Service.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		914270AF2665170800D71A74 /* Storage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Storage.swift; sourceTree = "<group>"; };
 		914270ED266518BA00D71A74 /* Push.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Push.swift; sourceTree = "<group>"; };
+		91427188266591D100D71A74 /* DependencyManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DependencyManager.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,7 +29,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				3D46402222319060000FB12F /* Service.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -56,6 +55,7 @@
 		3D46400422318AC2000FB12F /* Dependencies */ = {
 			isa = PBXGroup;
 			children = (
+				91427188266591D100D71A74 /* DependencyManager.swift */,
 				3D46400522318AC2000FB12F /* Dependencies.h */,
 				3D46401822318F6C000FB12F /* Dependencies.swift */,
 				3D46400622318AC2000FB12F /* Info.plist */,
@@ -68,7 +68,6 @@
 		3D46402022319060000FB12F /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				3D46402122319060000FB12F /* Service.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -152,6 +151,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				91427189266591D100D71A74 /* DependencyManager.swift in Sources */,
 				3D46401922318F6C000FB12F /* Dependencies.swift in Sources */,
 				914270EE266518BA00D71A74 /* Push.swift in Sources */,
 				914270B02665170800D71A74 /* Storage.swift in Sources */,
