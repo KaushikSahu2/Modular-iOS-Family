@@ -8,8 +8,6 @@
 
 import UIKit
 import Dependencies
-import Chat
-import UserProfile
 import Storage
 import Push
 
