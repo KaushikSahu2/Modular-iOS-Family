@@ -15,7 +15,6 @@ public protocol PushModuleProtocol {
 }
 
 extension Dependencies {
-    // Now we can obtain a ChatModule
     public var pushModule: PushModuleProtocol {
         return resolve(PushModuleProtocol.self)!
     }
