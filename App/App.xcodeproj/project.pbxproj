@@ -12,9 +12,28 @@
 		3D463F6222318647000FB12F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3D463F6022318647000FB12F /* LaunchScreen.storyboard */; };
 		3D46401B22318FDF000FB12F /* AppDependencies.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D46401A22318FDF000FB12F /* AppDependencies.swift */; };
 		3D464030223195A2000FB12F /* Dependencies.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3D46402F223195A2000FB12F /* Dependencies.framework */; };
+		910F757B2667B42D001D0B1A /* Push.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 910F75792667B42D001D0B1A /* Push.framework */; };
+		910F757C2667B42D001D0B1A /* Push.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 910F75792667B42D001D0B1A /* Push.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		910F757D2667B42D001D0B1A /* Storage.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 910F757A2667B42D001D0B1A /* Storage.framework */; };
+		910F757E2667B42D001D0B1A /* Storage.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 910F757A2667B42D001D0B1A /* Storage.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		914271852665845500D71A74 /* PushViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 914271842665845500D71A74 /* PushViewController.swift */; };
 		914271872665846000D71A74 /* StorageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 914271862665846000D71A74 /* StorageViewController.swift */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		910F757F2667B42D001D0B1A /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				910F757E2667B42D001D0B1A /* Storage.framework in Embed Frameworks */,
+				910F757C2667B42D001D0B1A /* Push.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		3D463F5222318647000FB12F /* App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = App.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -24,6 +43,8 @@
 		3D463F6322318647000FB12F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		3D46401A22318FDF000FB12F /* AppDependencies.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDependencies.swift; sourceTree = "<group>"; };
 		3D46402F223195A2000FB12F /* Dependencies.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Dependencies.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		910F75792667B42D001D0B1A /* Push.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Push.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		910F757A2667B42D001D0B1A /* Storage.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Storage.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		9142717D26652CCD00D71A74 /* Push.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Push.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		9142717E26652CCD00D71A74 /* Storage.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Storage.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		914271842665845500D71A74 /* PushViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PushViewController.swift; sourceTree = "<group>"; };
@@ -35,7 +56,9 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				910F757B2667B42D001D0B1A /* Push.framework in Frameworks */,
 				3D464030223195A2000FB12F /* Dependencies.framework in Frameworks */,
+				910F757D2667B42D001D0B1A /* Storage.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -76,6 +99,8 @@
 		3D463FC2223188EA000FB12F /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				910F75792667B42D001D0B1A /* Push.framework */,
+				910F757A2667B42D001D0B1A /* Storage.framework */,
 				9142717D26652CCD00D71A74 /* Push.framework */,
 				9142717E26652CCD00D71A74 /* Storage.framework */,
 				3D46402F223195A2000FB12F /* Dependencies.framework */,
@@ -93,6 +118,7 @@
 				3D463F4E22318647000FB12F /* Sources */,
 				3D463F4F22318647000FB12F /* Frameworks */,
 				3D463F5022318647000FB12F /* Resources */,
+				910F757F2667B42D001D0B1A /* Embed Frameworks */,
 			);
 			buildRules = (
 			);

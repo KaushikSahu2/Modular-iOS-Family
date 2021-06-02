@@ -10,7 +10,8 @@ import Foundation
 
 public protocol PushModuleProtocol {
     func pushService() -> String
-    func registerPushNotification()
+    func registerForPushNotification()
+    func unregisterForPushNotification()
     func pushNotificationReceived()
 }
 

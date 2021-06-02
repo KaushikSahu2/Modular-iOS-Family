@@ -13,6 +13,7 @@ public protocol StorageModuleProtocol {
     func getStoreLocation() -> String
     func saveData(data: String)
     func getData() -> String
+    func removeData(data: String)
 }
 
 extension Dependencies {

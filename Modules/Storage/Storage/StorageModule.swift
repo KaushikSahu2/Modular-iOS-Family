@@ -17,7 +17,6 @@ public class StorageModule: StorageModuleProtocol {
     }
 
     public func saveData(data: String) {
-        // configure and return a view controller
         print("[Storage] : Saving data in <\(getStorageIdentity())>")
     }
     
@@ -26,10 +25,14 @@ public class StorageModule: StorageModuleProtocol {
         print("[Storage] : Fethcing data from <\(getStorageIdentity())> = \(fetchedData)")
         return fetchedData
     }
+    
+    public func removeData(data: String) {
+        print("[Storage] : Removing data in <\(getStorageIdentity())>")
+    }
 }
 
 extension StorageModule {
     private func getStorageIdentity() -> String {
-        return "SQLITE DB"
+        return "SQLITE DB1"
     }
 }
