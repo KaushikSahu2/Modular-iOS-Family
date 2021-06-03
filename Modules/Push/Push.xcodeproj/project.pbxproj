@@ -13,7 +13,6 @@
 		9142716126651A8800D71A74 /* Dependencies.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9142715E26651A8800D71A74 /* Dependencies.framework */; };
 		9142716226651A8800D71A74 /* Dependencies.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 9142715E26651A8800D71A74 /* Dependencies.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		91427176266527A400D71A74 /* PushModule.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91427175266527A400D71A74 /* PushModule.swift */; };
-		914271782665285600D71A74 /* PushViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 914271772665285600D71A74 /* PushViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,7 +48,6 @@
 		9142715326651A7400D71A74 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		9142715E26651A8800D71A74 /* Dependencies.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Dependencies.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		91427175266527A400D71A74 /* PushModule.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PushModule.swift; sourceTree = "<group>"; };
-		914271772665285600D71A74 /* PushViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = PushViewController.swift; path = ../../../App/App/PushViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -97,7 +95,6 @@
 				9142714626651A7300D71A74 /* Push.h */,
 				9142714726651A7300D71A74 /* Info.plist */,
 				91427175266527A400D71A74 /* PushModule.swift */,
-				914271772665285600D71A74 /* PushViewController.swift */,
 			);
 			path = Push;
 			sourceTree = "<group>";
@@ -229,7 +226,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				914271782665285600D71A74 /* PushViewController.swift in Sources */,
 				91427176266527A400D71A74 /* PushModule.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
