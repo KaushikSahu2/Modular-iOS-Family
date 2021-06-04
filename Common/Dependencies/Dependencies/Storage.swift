@@ -9,7 +9,6 @@
 import Foundation
 
 public protocol StorageModuleProtocol {
-    // Returns a new view controller used to show a list of conversations
     func getStoreLocation() -> String
     func saveData(data: String)
     func getData() -> String

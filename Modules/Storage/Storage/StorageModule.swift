@@ -33,6 +33,6 @@ public class StorageModule: StorageModuleProtocol {
 
 extension StorageModule {
     private func getStorageIdentity() -> String {
-        return "REALM DB"
+        return "SQLITE DB"
     }
 }
