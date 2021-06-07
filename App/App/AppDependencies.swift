@@ -10,6 +10,7 @@ import UIKit
 import Dependencies
 import Storage
 import Push
+import Logger
 
 func setUpDependencies() {
     // register dependencies here
@@ -23,4 +24,8 @@ func setUpDependencies() {
         return PushModule()
     }
 
+    dependencies.register(LoggerModuleProtocol.self) {
+        return LoggerModule().v2()
+    }
 }
+ 

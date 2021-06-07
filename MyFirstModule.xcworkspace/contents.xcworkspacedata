@@ -8,10 +8,13 @@
       location = "container:"
       name = "Modules">
       <FileRef
+         location = "group:Modules/Storage/Storage.xcodeproj">
+      </FileRef>
+      <FileRef
          location = "group:Modules/Push/Push.xcodeproj">
       </FileRef>
       <FileRef
-         location = "group:Modules/Storage/Storage.xcodeproj">
+         location = "group:Modules/Logger/Logger.xcodeproj">
       </FileRef>
    </Group>
    <Group

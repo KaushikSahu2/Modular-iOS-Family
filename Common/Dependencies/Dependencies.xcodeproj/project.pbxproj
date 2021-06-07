@@ -12,6 +12,7 @@
 		914270B02665170800D71A74 /* Storage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 914270AF2665170800D71A74 /* Storage.swift */; };
 		914270EE266518BA00D71A74 /* Push.swift in Sources */ = {isa = PBXBuildFile; fileRef = 914270ED266518BA00D71A74 /* Push.swift */; };
 		91427189266591D100D71A74 /* DependencyManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91427188266591D100D71A74 /* DependencyManager.swift */; };
+		91FC8DD9266DFC8C002EE109 /* Logger.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91FC8DD8266DFC8C002EE109 /* Logger.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +23,7 @@
 		914270AF2665170800D71A74 /* Storage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Storage.swift; sourceTree = "<group>"; };
 		914270ED266518BA00D71A74 /* Push.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Push.swift; sourceTree = "<group>"; };
 		91427188266591D100D71A74 /* DependencyManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DependencyManager.swift; sourceTree = "<group>"; };
+		91FC8DD8266DFC8C002EE109 /* Logger.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Logger.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -61,6 +63,7 @@
 				3D46400622318AC2000FB12F /* Info.plist */,
 				914270AF2665170800D71A74 /* Storage.swift */,
 				914270ED266518BA00D71A74 /* Push.swift */,
+				91FC8DD8266DFC8C002EE109 /* Logger.swift */,
 			);
 			path = Dependencies;
 			sourceTree = "<group>";
@@ -151,6 +154,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				91FC8DD9266DFC8C002EE109 /* Logger.swift in Sources */,
 				91427189266591D100D71A74 /* DependencyManager.swift in Sources */,
 				3D46401922318F6C000FB12F /* Dependencies.swift in Sources */,
 				914270EE266518BA00D71A74 /* Push.swift in Sources */,

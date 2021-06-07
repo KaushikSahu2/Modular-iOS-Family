@@ -33,6 +33,11 @@ class StorageViewController: UIViewController {
         ]
         view.addSubview(label)
         NSLayoutConstraint.activate(constraints)
+        testVersioning()
+    }
+    
+    func testVersioning() {
+        Dependencies.shared.loggerModule.writeLogs(log: "test")
     }
     
 //    private func showGetPushButton() {
