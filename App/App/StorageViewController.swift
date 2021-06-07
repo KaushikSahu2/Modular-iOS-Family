@@ -38,6 +38,7 @@ class StorageViewController: UIViewController {
     
     func testVersioning() {
         Dependencies.shared.loggerModule.writeLogs(log: "test")
+        Dependencies.shared.loggerModule.sendLogs?()
     }
     
 //    private func showGetPushButton() {

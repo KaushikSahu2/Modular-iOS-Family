@@ -25,7 +25,7 @@ func setUpDependencies() {
     }
 
     dependencies.register(LoggerModuleProtocol.self) {
-        return LoggerModule().v2()
+        return LoggerModuleV2()
     }
 }
  

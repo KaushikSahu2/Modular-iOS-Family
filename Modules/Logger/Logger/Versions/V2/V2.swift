@@ -8,30 +8,15 @@
 import Foundation
 import Dependencies
 
-public class V2: LoggerModuleProtocol {
-
-    public init() {}
-    
-    public func loggerService() -> String {
-        print("[Push] : Fetching Logger service V2 = <\(getLoggerIdentity())>")
-        return getLoggerIdentity()
-    }
-    
-    public func writeLogs(log: String) {
-        print("[Logger - v2] : \(log)")
-    }
-    
-    public func readLogs() {
-        print("[Logger - v2] : reading logs from <\(getLoggerIdentity())>")
-    }
+public class LoggerModuleV2: LoggerModule {
     
     public func sendLogs() {
-        print("[Logger - v2] : sending logs to server from <\(getLoggerIdentity())>")
+        print("[Logger - v2] : sending logs to server using <\(getLoggerIdentity())>")
     }
 }
 
-extension V2 {
-    private func getLoggerIdentity() -> String {
-        return "CocoaLumberjack"
+extension LoggerModuleV2 {
+    override func getLoggerIdentity() -> String {
+        return "FSLog"
     }
 }
